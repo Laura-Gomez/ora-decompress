@@ -1,0 +1,29 @@
+
+##### https://support-docs.illumina.com/SW/Decompression_v2_6/Content/SW/ORA/Decompression_Installation.htm
+
+#1.	Extract the archive files using the following command:
+tar -xzvf orad.2.6.1.linux.tar.gz (Linux)
+
+tar -xzvf orad.2.6.1.mac.tar.gz (Mac)
+
+#2.	Navigate to the Orad directory as follows:
+cd orad_2_6_1
+
+#3.	Move the executable to your preferred location as follows:
+mv orad your_preferred_location/
+
+#4.	Add Orad to your path as follows:
+echo 'PATH=$PATH: your_preferred_location/'» ~/.bashrc
+
+source ~/.bashrc
+
+#5.	Move the oradata folder content into the home repository as follows:
+mv oradata ~
+
+#To store the folder in a different location, use the ORA_REF_PATH environment variable as follows.
+
+mv oradata ~/otherlocation/
+
+export ORA_REF_PATH=~/otherlocation/oradata/
+
+
